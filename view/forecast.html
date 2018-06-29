@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+            <script src="script.js"></script>
+                        <script type="text/javascript" src="service.js"></script>
+                                <link rel="stylesheet" type="text/css" href="css/style.css">
+ -->
+</head>
+<body ng-controller="forecast_ctrl">
+	<BR>
+	<h2><center>NEXT FOUR DAY FORECAST</center></h2>
+	<br>
+	<br>
+	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">{{today_n}}</th>
+      <th scope="col">{{day1_n}}</th>
+      <th scope="col">{{day2_n}}</th>
+      <th scope="col">{{day3_n}}</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Temperature(*C)</th>
+      <td>{{today_t}}</td>
+      <td>{{day1_t}}</td>
+      <td>{{day2_t}}</td>
+      <td>{{day3_t}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">humidity(%)</th>
+      <td>{{today.main.humidity}}</td>
+      <td>{{day1.main.humidity}}</td>
+      <td>{{day2.main.humidity}}</td>
+      <td>{{day3.main.humidity}}</td>
+    </tr>
+    <tr>
+      <th scope="row">wind speed(km/h)</th>
+      <td>{{today.wind.speed}}</td>
+      <td>{{day1.wind.speed}}</td>
+      <td>{{day2.wind.speed}}</td>
+      <td>{{day3.wind.speed}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<a href="#wheather" class="btn btn-danger" style="margin-left: 30px;">back</a>
+<a href="index.html" class="btn btn-danger" style="margin-right: 40px; float: right">Home</a>
+<!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</body>
+</html>

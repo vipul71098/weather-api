@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="mymodule">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <title></title>
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+            <script src="script.js"></script>
+          
+                        <script type="text/javascript" src="service.js"></script>
+                        <link rel="stylesheet" href="view/css/bootstrap.css"> 
+<link rel="stylesheet" href="view/css/style.css">
+
+
+
+
+
+</head>
+<body ng-controller="mainController" bgcolor="BLUE">
+ 
+  <h1 style="margin-top: 30px;"><center>Check the weather of your city</centers></h1>
+    <ul>
+    
+            <h2> <li><a href="#try1">Search Here</a></li></h2>
+       
+
+
+    </ul>
+    <div id="main">
+      <div ng-view></div>
+    </div>
+    <script type="text/javascript" src="view/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="view/js/bootstrap.min.js"></script>
+</body>
+</html>

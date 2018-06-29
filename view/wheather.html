@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<title></title>
+</head>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.css"> 
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/services.js"></script> -->
+
+<body ng-controller="MainCtrl2">
+
+<h1 style="margin-left: 380px; margin-top: 30px; font-size: 40px;"> WHEATHER OF THE   {{text1}}</h1>
+<br>
+<br>
+<div class="row">
+<div class="col-sm-4">
+	<div class="panel">
+		<div class="panel-heading" style="margin-left: 100px; font-size:20px;">TEMPERATURE(*C)</div><br>
+		
+
+	</div>
+	<div class="panel-body" style="max-width: 200px; height: 100px; border: 1px solid black; margin-left: 60px; overflow: hidden; text-align: center;">
+		<h1><center>{{temperature}}</center></h1>
+
+	</div>
+</div>
+<div class="col-sm-4">
+	 <div class="panel">
+	 	<div class="panel-heading" style="margin-left: 90px; font-size: 20px;">HUMIDITY(%)</div><br>
+	 	<div class="panel-body" style="width: 200px; height: 100px; border: 1px solid black; margin-left: 50px;">
+	 				<h1><center>{{humidity}}</center></h1>
+
+	 	</div>
+	</div>
+</div>
+<div class="col-sm-4">
+<div class="panel">
+	<div class="panel-heading" style="margin-left: 60px; font-size: 20px;">WIND SPEED(KM/H)</div><br>
+	<div class="panel-body" style="width: 200px; height: 100px; border: 1px solid black; margin-left:40px;">
+			 				<h1><center>{{wind}}</center></h1>
+
+	</div>
+</div>
+</div>
+</div>	
+</div>
+<br>
+<br>
+<a href="#forecast" class="btn btn-lg btn-danger" ng-click="getforecast()" style="margin-left: 560px;">Forecast</a>
+
+<!-- <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
